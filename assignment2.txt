@@ -1,0 +1,84 @@
+1. Write a script to create 10 directories, say a1,a2,...,a10
+Report error if a directory/file exists with the same name.
+
+for((i =1; $i<=10; i++))
+do
+        mkdir a$i;
+done
+
+2. Write a menu based script to perform following string operations
+a) To find length of a string
+c) Copying string
+d) Concatenation of strings
+e) Compare two strings
+f) Reversing a string
+
+ echo '3.Concate of string'        echo '4.compare to sring'        echo '5.Reverse string'
+read str1
+read option
+case $option in        
+1) echo ${#str1}                ;;       
+2) str2=$str1        echo $str2          ;;        
+3)str2="Mahajan"                echo $str1$str2                ;;        4) str2="Meghana"        if [ $str1 == $str2 ]        then          echo "Equal"        else            echo "Not equal"        fi            ;;        5) echo $str1 | rev                ;;
+
+
+3.Write a shell script to rename all files in the current directory with numeric continuous value(Warning: Do this in a personal folder. Don't use Home directory) 
+4. Write a script that print environment variable(Print $HOME,$PATH,$SHELL,$HISTORY,$LOGNAME,$TERM)
+
+5. Write a shell script to print all files permissions in current directory(Not name or other details)(Use cut commands)
+
+6. Write a shell script to print all files permissions and name of file
+
+7.Write a shell script to print all files name and size greater than 5K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Write a script To check given year is leap or not.
+2. Write a script to print day of the week using
+	a) elif	b) case 
+3. a) Write a script to find biggest of three no.s
+   b) To find avg of 3 no.s, read no.s from keyboard
+4. Write a program to check wahether given no.is even or odd
+5. Write a program to print calendar of current month in next year,previous years.
+	For eg:-sep 2014,sep 2012 if current month is sep 2013	
+6. Write a program to find sum and product of two no.s using 
+	a) let 
+	b)expr
+	c)bc	
+7. Write a script to generate Fibonacci series.
+8. Write a shell script to reverse the single strings. 
+9.Write a shell script to reverse the list of strings and reverse each string further in the list.
+10. Write a shell script to print the reverse of an input number.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.Write a shell script to validate password strength. Here are a few assumptions for the password string.
+Length  – minimum of 8 characters.
+Contain both alphabet and number.
+Include both the small and capital case letters.
+If the password doesn’t comply with any of the above conditions, then the script should report it as a <Weak Password>.
