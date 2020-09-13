@@ -31,10 +31,10 @@ f) Reversing a string
         2) str2=$str1
         echo $str2
           ;;
-        3)str2="cdac"
+        3)str2="hello"
                 echo $str1$str2
                 ;;
-        4) str2="mumbai"
+        4) str2="cdac"
         if [ $str1 == $str2 ]
         then
           echo "Equal"
